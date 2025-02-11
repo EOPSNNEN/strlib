@@ -29,7 +29,7 @@
 <details>
 <summary>KR</summary>
 
-### 문자열 함수
+### 간단한 문자열 함수
 
 - **`strLen(const char *str)`**  
   입력된 문자열의 길이를 반환합니다.
