@@ -1,4 +1,3 @@
-﻿#include <cstring>
 #define ushort unsigned short
 #define EQUAL 0
 #define NOT_EQUAL 1
@@ -87,3 +86,6 @@ inline const char* strCpy(char *buffer, const char *srcStr) {
 
     return buffer;
 }
+
+#undef EQUAL
+#undef NOT_EQUAL
