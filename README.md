@@ -22,7 +22,7 @@
   Concatenates two strings and returns a new string containing the result.
 
 - **`strCpy(char *buffer, const char *srcStr)`**  
-  Copies the string `srcStr` into the provided `buffer` and returns the `buffer`. (Warning! after `buffer` usage please don't forget to free this `buffer`)
+  Copies the string `srcStr` into the provided `buffer` and returns the `buffer`. (Warning! after dynamic `buffer` usage, please don't forget to free this `buffer`)
 
 </details>
 
@@ -50,7 +50,7 @@
   두 문자열을 연결한 후에 결과를 반환합니다.
 
 - **`strCpy(char *buffer, const char *srcStr)`**  
-  `srcStr`을 `buffer`에 복사하고 `buffer`를 반환합니다. (주의사항! `buffer`를 사용한 후에 `buffer`를 삭제되면 좋겠습니다)
+  `srcStr`을 `buffer`에 복사하고 `buffer`를 반환합니다. (주의사항! 동적 `buffer`를 사용한 후에 `buffer`를 삭제되면 좋겠습니다)
 
 </details>
 
@@ -78,6 +78,6 @@
   Конкатенирует две строки и возвращает новую строку, содержащую результат.
 
 - **`strCpy(char *buffer, const char *srcStr)`**  
-  Копирует строку `srcStr` в предоставленный `buffer` и возвращает `buffer`. (Внимание! после использования `buffer` желательно освободить память)
+  Копирует строку `srcStr` в предоставленный `buffer` и возвращает `buffer`. (Внимание! после использования динамического `buffer` желательно освободить память)
 
 </details>
