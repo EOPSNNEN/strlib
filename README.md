@@ -1,7 +1,7 @@
 <details>
 <summary>EN</summary>
 
-### Straightforward string functions
+### Straightforward string library
 
 - **`strLen(const char *str)`**  
   Returns the length of the input string.
@@ -29,7 +29,7 @@
 <details>
 <summary>KR</summary>
 
-### 간단한 문자열 함수
+### 간단한 문자열 라이브러리
 
 - **`strLen(const char *str)`**  
   입력된 문자열의 길이를 반환합니다.
@@ -57,7 +57,7 @@
 <details>
 <summary>RU</summary>
 
-### Простые строковые функции
+### Простая библиотека строк
 
 - **`strLen(const char *str)`**  
   Возвращает длину строки.
