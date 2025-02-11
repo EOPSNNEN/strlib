@@ -1,5 +1,7 @@
 ﻿#include <cstring>
 #define ushort unsigned short
+#define EQUAL 0
+#define NOT_EQUAL 1
 
 inline ushort strLen(const char *str) {
     ushort length = 0;
@@ -8,7 +10,6 @@ inline ushort strLen(const char *str) {
         length++;
         str++;
     }
-
     return length;
 }
 
@@ -16,11 +17,10 @@ inline ushort strLen(const char *str) {
 inline bool strCmp(const char *str, const char *str2) {
     for (ushort i = 0; str[i] != '\0' || str2[i] != '\0'; ++i) {
         if (str[i] != str2[i]) {
-            return 1;
+            return NOT_EQUAL; 
         }
     }
-
-    return 0;
+    return EQUAL;
 }
 
 
@@ -31,7 +31,6 @@ inline const char* strChr_s(const char *str, char chr) {
             return &str[i];
         }
     }
-
     return &str[i]; // ret '\0'
 }
 
@@ -44,7 +43,6 @@ inline const char* strChr(const char *str, char chr) {
             return &str[i];
         }
     }
-
     return nullptr;
 }
 
@@ -57,7 +55,6 @@ inline const char* strStr(const char *str, const char *str2) {
             return &str[i];
         }
     }
-
     return nullptr;
 }
 
@@ -75,7 +72,6 @@ inline const char* strCat(const char *str, const char *str2) {
     for (ushort j = 0; str2[j] != '\0'; ++j) {
         newArr[j + length] = str2[j];
     }
-
     newArr[newSz] = '\0';
 
     return newArr;
@@ -87,7 +83,6 @@ inline const char* strCpy(char *buffer, const char *srcStr) {
     for (; srcStr[i] != '\0'; ++i) {
         *(buffer + i) = *(srcStr + i);
     }
-
     buffer[i] = '\0';
 
     return buffer;
