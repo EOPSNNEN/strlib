@@ -10,13 +10,13 @@
   Compares two strings and returns `0` if they are equal, `1` if they are not.
 
 - **`strChr_s(const char *str, char chr)`**  
-  Returns a pointer to the first occurrence of the character chr in the string str. If not found, returns a pointer to the null terminator `'\0'`.
+  Returns a pointer to the first occurrence of the character `chr` in the string `str`. If not found, returns a pointer to the null terminator `'\0'`.
 
 - **`strChr(const char *str, char chr)`**  
-  Searches for the first occurrence of the character chr in the string str. Returns a pointer to the character, or `nullptr` if not found.
+  Searches for the first occurrence of the character `chr` in the string `str`. Returns a pointer to the character, or `nullptr` if not found.
 
 - **`strStr(const char *str, const char *str2)`**  
-  Searches for the substring str2 in the string str. Returns a pointer to the first occurrence of str2 or `nullptr` if not found.
+  Searches for the substring `str2` in the string `str`. Returns a pointer to the first occurrence of `str2` or `nullptr` if not found.
 
 - **`strCat(const char *str, const char *str2)`**  
   Concatenates two strings and returns a new string containing the result.
@@ -66,7 +66,7 @@
   Сравнивает две строки и возвращает `0`, если они равны, и `1`, если они разные.
 
 - **`strChr_s(const char *str, char chr)`**  
-  Возвращает указатель на первое вхождение символа chr в строку `str`. Если не найдено, возвращает указатель на нулевой символ `'\0'`.
+  Возвращает указатель на первое вхождение символа `chr` в строку `str`. Если не найдено, возвращает указатель на нулевой символ `'\0'`.
 
 - **`strChr(const char *str, char chr)`** 
   Ищет первое вхождение символа `chr` в строке `str`. Возвращает указатель на символ или `nullptr`, если не найдено.
