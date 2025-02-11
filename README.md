@@ -3,13 +3,13 @@
 
 ### Straightforward string functions
 
-- **strLen(const char *str)**  
+- **`strLen(const char *str)`**  
   Returns the length of the input string.
 
-- **strCmp(const char *str, const char *str2)**  
+- **`strCmp(const char *str, const char *str2)`**  
   Compares two strings and returns 0 if they are equal, 1 if they are not.
 
-- **strChr_s(const char *str, char chr)**  
+- **`strChr_s(const char *str, char chr)`**  
   Returns a pointer to the first occurrence of the character chr in the string str. If not found, returns a pointer to the null terminator '\0'.
 
 - **strChr(const char *str, char chr)**  
