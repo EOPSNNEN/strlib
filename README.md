@@ -19,10 +19,10 @@
   Searches for the substring `str2` in the string `str`. Returns a pointer to the first occurrence of `str2` or `nullptr` if not found.
 
 - **`strCat(const char *str, const char *str2)`**  
-  Concatenates two strings and returns a new string containing the result.
+  Concatenates two strings and returns a new string containing the result. (Warning! this function generates dynamic array, make sure to delete it after use)
 
 - **`strCpy(char *buffer, const char *srcStr)`**  
-  Copies the string `srcStr` into the provided `buffer` and returns the `buffer`. (Warning! after dynamic buffer usage, please don't forget to free this buffer)
+  Copies the string `srcStr` into the provided `buffer` and returns the `buffer`. (Warning! in case of dynamic buffer, please don't forget to free this buffer)
 
 </details>
 
@@ -46,11 +46,11 @@
 - **`strStr(const char *str, const char *str2)`** 
   문자열 `str`에서 부분 문자열 `str2`를 찾습니다. 찾으면 `str2`의 첫 번째 위치를 반환하고, 그렇지 않을 경우엔 `nullptr`을 반환합니다.
 
-- **`strCat(const char *str, const char *str2)`**  
+- **`strCat(const char *str, const char *str2)`**  (주의사항! 이 함수는 동적 `buffer`를 자동으로 만들어서, 사용한 후에 삭제되면 좋겠습니다)
   두 문자열을 연결한 후에 결과를 반환합니다.
 
 - **`strCpy(char *buffer, const char *srcStr)`** 
-  `srcStr`을 `buffer`에 복사하고 `buffer`를 반환합니다. (주의사항! 동적 `buffer`를 사용한 후에 `buffer`를 삭제되면 좋겠습니다)
+  `srcStr`을 `buffer`에 복사하고 `buffer`를 반환합니다. (주의사항! 동적 `buffer`를 사용하면 이를 삭제되면 좋겠습니다)
 
 </details>
 
@@ -75,9 +75,9 @@
   Ищет подстроку `str2` в строке `str`. Возвращает указатель на первое вхождение `str2`, или `nullptr`, если не найдено.
 
 - **`strCat(const char *str, const char *str2)`**  
-  Конкатенирует две строки и возвращает новую строку, содержащую результат.
+  Конкатенирует две строки и возвращает новую строку, содержащую результат.  (Внимание! эта функция генерирует динамический массив, поэтому не забудьте удалить после использования)
 
 - **`strCpy(char *buffer, const char *srcStr)`** 
-  Копирует строку `srcStr` в предоставленный `buffer` и возвращает `buffer`. (Внимание! после использования динамического `buffer` желательно освободить память)
+  Копирует строку `srcStr` в предоставленный `buffer` и возвращает `buffer`. (Внимание! в случае использования динамического `buffer` желательно освободить память)
 
 </details>
