@@ -1,5 +1,8 @@
+## Language Selection
+[English](#en) | [한국어](#kr) | [Русский](#ru)
+
 <details>
-<summary>EN</summary>
+<summary id="en">EN</summary>
 
 ### Straightforward string functions
 
@@ -27,7 +30,7 @@
 </details>
 
 <details>
-<summary>KR</summary>
+<summary id="kr">KR</summary>
 
 ### 문자열 함수
 
@@ -55,7 +58,7 @@
 </details>
 
 <details>
-<summary>RU</summary>
+<summary id="ru">RU</summary>
 
 ### Простые строковые функции
 
