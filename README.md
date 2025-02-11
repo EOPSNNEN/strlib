@@ -22,7 +22,7 @@
   Concatenates two strings and returns a new string containing the result.
 
 - **`strCpy(char *buffer, const char *srcStr)`**  
-  Copies the string `srcStr` into the provided buffer and returns the buffer. (Warning! after dynamic buffer usage, please don't forget to free this buffer)
+  Copies the string `srcStr` into the provided `buffer` and returns the `buffer`. (Warning! after dynamic buffer usage, please don't forget to free this buffer)
 
 </details>
 
