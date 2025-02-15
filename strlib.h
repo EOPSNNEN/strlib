@@ -1,6 +1,4 @@
 #define ushort unsigned short
-#define EQUAL 0
-#define NOT_EQUAL 1
 
 inline ushort strLen(const char *str) {
     ushort length = 0;
@@ -16,10 +14,10 @@ inline ushort strLen(const char *str) {
 inline bool strCmp(const char *str, const char *str2) {
     for (ushort i = 0; str[i] != '\0' || str2[i] != '\0'; ++i) {
         if (str[i] != str2[i]) {
-            return NOT_EQUAL; 
+            return 1; 
         }
     }
-    return EQUAL;
+    return 0;
 }
 
 
@@ -86,6 +84,3 @@ inline const char* strCpy(char *buffer, const char *srcStr) {
 
     return buffer;
 }
-
-#undef EQUAL
-#undef NOT_EQUAL
