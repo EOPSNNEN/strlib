@@ -62,7 +62,7 @@ inline const char* strCat(const char *str, const char *str2) {
     ushort length = strLen(str);
     ushort length2 = strLen(str2);
     ushort newSz = length + length2;
-    char* newArr = new char[newSz + 1];
+    char* newArr = new char[newSz + 1]();
 
     for (ushort i = 0; str[i] != '\0'; ++i) {
         newArr[i] = str[i];
